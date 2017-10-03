@@ -1,3 +1,3 @@
 # Algorithms-Programming
-This is my algorithm implementations in the book 'Giai Thuat Lap Trinh' by Le Minh Hoang. All of sourcecodes are written in Python.
-Remember to user Python 3.x version.
+Python implementation of algorithms from Le Minh Hoang's "Giai thuat lap trinh".
+Remember to use Python 3.x versions.
