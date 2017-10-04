@@ -1,7 +1,11 @@
-import math
-import time
+### Print all binary strings of length n ###
+### Input: an integer from file bstr.inp.txt ###
+### Output: binary strings of length n from file bstr.out.txt ### 
 
-start = time.time()
+import math
+import timeit
+
+start = timeit.timeit()
 in_file = open('bstr.inp.txt')
 indata = in_file.read()
 out_file = open('bstr.out.txt', 'w')
@@ -21,10 +25,14 @@ def binaryString(n):
                 break
     return newBinary
 
-s =  int(indata)
-result = binaryString(s)
-out_file.write('\n'.join(result))
-end = time.time()
-print(end - start)
-in_file.close()
-out_file.close()
+def main():
+    s = int(indata)
+    result = binaryString(s)
+    out_file.write('\n'.join(result))
+    in_file.close()
+    out_file.close()
+    end = timeit.timeit()
+    print(end - start)
+
+if __name__ == "__main__":
+    main()      
