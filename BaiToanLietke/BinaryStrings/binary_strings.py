@@ -5,7 +5,7 @@
 import math
 import timeit
 
-start = timeit.timeit()
+start = timeit.default_timer()
 in_file = open('bstr.inp.txt')
 indata = in_file.read()
 out_file = open('bstr.out.txt', 'w')
@@ -31,7 +31,7 @@ def main():
     out_file.write('\n'.join(result))
     in_file.close()
     out_file.close()
-    end = timeit.timeit()
+    end = timeit.default_timer()
     print(end - start)
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@
 import timeit
 import pprint
 
-start = timeit.timeit()
+start = timeit.default_timer()
 def subSet(n, k):
     allSet = []
     firstSet = []
@@ -29,7 +29,7 @@ def main():
     with open('subset.out.txt', 'w') as outputFile:
         outputFile.write("Result: ")
         pprint.pprint(result, outputFile)
-    end = timeit.timeit()
+    end = timeit.default_timer()
     print(end - start)
 
 if __name__ == "__main__":
